@@ -1,11 +1,12 @@
 import Layout from "../components/layouts/main"
 import { AnimatePresence } from "framer-motion"
 import Fonts from "../components/fonts"
-import { ChakraProvider } from "@chakra-ui/react"
+import Chakra from "../components/chakra"
+import { Analytics } from "@vercel/analytics/react"
 
 const Website = ({ Component, pageProps, router }) => {
   return (
-    <ChakraProvider>
+    <Chakra cookies={pageProps.cookies}>
       <Fonts />
       <Layout router={router}>
         <AnimatePresence
@@ -19,8 +20,9 @@ const Website = ({ Component, pageProps, router }) => {
         >
           <Component {...pageProps} key={router.route} />
         </AnimatePresence>
+        <Analytics />
       </Layout>
-    </ChakraProvider>
+    </Chakra>
   )
 }
 
