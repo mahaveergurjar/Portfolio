@@ -3,6 +3,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { loadGLTFModel } from '../lib/model';
 import { DogSpinner, DogContainer } from './voxel-dog-loader';
+import { sRGBEncoding } from 'three'; // Explicitly import sRGBEncoding
 
 function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4));
@@ -37,7 +38,7 @@ const VoxelDog = () => {
       });
       renderer.setPixelRatio(window.devicePixelRatio);
       renderer.setSize(scW, scH);
-      renderer.outputEncoding = THREE.sRGBEncoding;  // Ensure sRGBEncoding is available
+      renderer.outputEncoding = sRGBEncoding; // Use sRGBEncoding
       container.appendChild(renderer.domElement);
       refRenderer.current = renderer;
       const scene = new THREE.Scene();
