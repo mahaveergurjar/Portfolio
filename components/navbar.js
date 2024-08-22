@@ -16,6 +16,7 @@ import {
 } from "@chakra-ui/react"
 import { HamburgerIcon } from "@chakra-ui/icons"
 import ThemeToggleButton from "./theme-toggle-button"
+import { IoLogoGithub } from "react-icons/io5"
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -71,24 +72,24 @@ const Navbar = props => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/works" path={path}>
-            Works
-          </LinkItem>
-          <LinkItem href="/wallpapers" path={path}>
             Projects
+          </LinkItem>
+          <LinkItem href="#" path={path}>
+            Works
           </LinkItem>
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
-          <LinkItem href="#">Uses</LinkItem>
           <LinkItem
             target="_blank"
-            href="#"
+            href="https://github.com/mahaveergurjar/Portfolio"
             path={path}
             display="inline-flex"
             alignItems="center"
             style={{ gap: 4 }}
             pl={2}
           >
+            <IoLogoGithub />
             Source
           </LinkItem>
         </Stack>
@@ -107,19 +108,19 @@ const Navbar = props => {
                 <MenuItem as={NextLink} href="/">
                   About
                 </MenuItem>
-                <MenuItem as={NextLink} href="/works">
-                  Works
-                </MenuItem>
-                <MenuItem as={NextLink} href="#">
+                <MenuItem as={NextLink} href="/projects">
                   Projects
                 </MenuItem>
-                <MenuItem as={NextLink} href="#">
+                <MenuItem as={NextLink} href="">
+                  Works
+                </MenuItem>
+                <MenuItem as={NextLink} href="/posts">
                   Posts
                 </MenuItem>
-                <MenuItem as={NextLink} href="#">
-                  Uses
-                </MenuItem>
-                <MenuItem as={Link} href="#">
+                <MenuItem
+                  as={Link}
+                  href="https://github.com/mahaveergurjar/Portfolio"
+                >
                   View Source
                 </MenuItem>
               </MenuList>
