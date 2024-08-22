@@ -1,11 +1,12 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
-    "prettier": "prettier -write .",
+    "prettier": "prettier --write .",
     "lint": "next lint"
   },
   "keywords": [],
@@ -18,13 +19,12 @@
     "@emotion/styled": "^11.13.0",
     "framer-motion": "^11.3.28",
     "next": "^14.2.5",
-    "react": "^18.3.1", // Corrected from "rect" to "react"
+    "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "three": "^0.167.1"
   },
   "devDependencies": {
     "eslint-config-next": "^14.2.5",
     "prettier": "^3.3.3"
-  },
-  "description": ""
+  }
 }
