@@ -25,8 +25,8 @@ const Works = () => (
           </WorkGridItem>
         </Section>
         <Section>
-          <WorkGridItem id="walknote" title="Simon" thumbnail={thumbSimon}>
-            Siomn Says Game
+          <WorkGridItem id="simon" title="Simon" thumbnail={thumbSimon}>
+            Simon Says Game
           </WorkGridItem>
         </Section>
       </SimpleGrid>
@@ -35,4 +35,4 @@ const Works = () => (
 )
 
 export default Works
-// export { getServerSideProps } from "../components/chakra"
+export { getServerSideProps } from "../components/chakra"
