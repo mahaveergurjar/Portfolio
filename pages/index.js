@@ -6,6 +6,8 @@ import {
   Box,
   Button,
   Image,
+  List,
+  ListItem,
   useColorModeValue,
 } from "@chakra-ui/react"
 import { ChevronRightIcon } from "@chakra-ui/icons"
@@ -13,10 +15,17 @@ import Section from "../components/section"
 import Paragraph from "../components/paragraph"
 import { BioSection, BioYear } from "../components/bio"
 import Layout from "../components/layouts/article"
+import {
+  IoLogoTwitter,
+  IoLogoInstagram,
+  IoLogoGithub,
+  IoLogoLinkedin,
+} from "react-icons/io5"
+
 const Page = () => {
   return (
     <Layout>
-      <Container>
+      <Container maxW="container.md">
         <Box
           borderRadius="lg"
           mb={6}
@@ -25,12 +34,12 @@ const Page = () => {
           bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
           css={{ backdropFilter: "blur(10px)" }}
         >
-          Hello, I&apos;m a full-stack devloper!
+          Hello, I&apos;m a full-stack developer!
         </Box>
 
-        <Box display={{ md: "flex" }}>
-          <Box flexGrow={1}>
-            <Heading as="h2" varient="Page-title">
+        <Box display={{ base: "block", md: "flex" }} alignItems="center">
+          <Box flexGrow={1} textAlign={{ base: "center", md: "left" }}>
+            <Heading as="h2" variant="page-title">
               Mahaveer Gurjar
             </Heading>
             <p>( Developer / Designer )</p>
@@ -113,10 +122,69 @@ const Page = () => {
           <Heading as="h3" variant="section-title">
             I ♥
           </Heading>
-          <Paragraph>Art, Music, , Linux, Machine Learning</Paragraph>
+          <Paragraph>Art, Music, Linux, Machine Learning</Paragraph>
+        </Section>
+
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            On the web
+          </Heading>
+          <List spacing={3}>
+            <ListItem>
+              <Link href="https://github.com/mahaveergurjar" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoLogoGithub />}
+                >
+                  @mahaveer
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://www.linkedin.com/in/mahaveer-gurjar-893919174/"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoLogoLinkedin />}
+                >
+                  @mahaveer
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://x.com/Mahaveer2030" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoLogoTwitter />}
+                >
+                  @mahaveer
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://www.instagram.com/mahaveer_g7/"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoLogoInstagram />}
+                >
+                  @mahaveer
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
         </Section>
       </Container>
     </Layout>
   )
 }
+
 export default Page
