@@ -1,12 +1,11 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
-    "prettier": "prettier --write .",
+    "prettier": "prettier -write .",
     "lint": "next lint"
   },
   "keywords": [],
@@ -26,5 +25,6 @@
   "devDependencies": {
     "eslint-config-next": "^14.2.5",
     "prettier": "^3.3.3"
-  }
+  },
+  "description": ""
 }
