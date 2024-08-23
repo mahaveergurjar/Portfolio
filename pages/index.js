@@ -104,11 +104,11 @@ const Page = () => {
             Born in Pushkar (Rajasthan), India.
           </BioSection>
           <BioSection>
-            <BioYear>2018</BioYear>
+            <BioYear>2019</BioYear>
             Completed the 10th grade at Future Foundation School, Pisagan.
           </BioSection>
           <BioSection>
-            <BioYear>2020</BioYear>
+            <BioYear>2021</BioYear>
             Completed the 12th grade at The Govt. Model School, Pisagan.
           </BioSection>
           <BioSection>
