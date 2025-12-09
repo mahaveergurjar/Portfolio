@@ -35,7 +35,7 @@ const Work = () => {
     <Layout title="Simon Say Game">
       <Container>
         <Title>
-          Simon Say Game <Badge>2023</Badge>
+          Simon Say Game <Badge>2024</Badge>
         </Title>
         <P>
           <Heading as="h4" fontSize={16} my={6}>

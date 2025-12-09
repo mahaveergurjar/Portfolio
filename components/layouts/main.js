@@ -4,6 +4,7 @@ import Navbar from "../navbar"
 import { Box, Container } from "@chakra-ui/react"
 import Footer from "../footer"
 import VoxelDogLoader from "../voxel-dog-loader"
+import { GridItemStyle } from "../grid-item"
 
 const LazyVoxelDog = dynamic(() => import("../voxel-dog"), {
   ssr: false,
@@ -20,6 +21,7 @@ const Main = ({ children, router }) => {
       </Head>
 
       <Navbar path={router.asPath} />
+      <GridItemStyle />
 
       <Container maxW="container.md" pt={14}>
         <LazyVoxelDog />

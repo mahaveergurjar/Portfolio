@@ -33,7 +33,7 @@ const Work = () => {
     <Layout title="Wanderlust">
       <Container>
         <Title>
-          Wanderlust <Badge>2024-</Badge>
+          Wanderlust <Badge>2024</Badge>
         </Title>
         <P>
           Wanderlust Github Repository: WanderLust Developed a versatile Website

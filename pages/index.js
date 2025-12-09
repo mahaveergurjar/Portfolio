@@ -21,6 +21,28 @@ import {
   IoLogoGithub,
   IoLogoLinkedin,
 } from "react-icons/io5"
+import {
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiPython,
+  SiGit,
+  SiLinux,
+  SiHtml5,
+  SiCss3,
+  SiPhp,
+  SiCplusplus,
+  SiMongodb,
+  SiExpress,
+  SiMysql,
+  SiTailwindcss,
+  SiPostman,
+  SiElectron,
+} from "react-icons/si"
+import { FaJava } from "react-icons/fa"
+import { SimpleGrid, Icon, Text } from "@chakra-ui/react"
 
 const Page = () => {
   return (
@@ -34,7 +56,7 @@ const Page = () => {
           bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
           css={{ backdropFilter: "blur(10px)" }}
         >
-          Hello, I&apos;m a full-stack developer!
+          Hello, I&apos;m a full-stack developer based in India!
         </Box>
 
         <Box display={{ base: "block", md: "flex" }} alignItems="center">
@@ -72,15 +94,36 @@ const Page = () => {
 
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            About Us
+            About Me
           </Heading>
           <Paragraph>
             Mahaveer is a full-stack developer with a passion for building
             digital services and solutions. He excels in launching products,
             from planning and designing to solving real-life problems with code.
-            When not coding, he enjoys spending time with his camera. Currently,
-            he is focused on his studies and personal projects while pursuing a
-            B.Tech at the National Institute of Technology, Jalandhar.
+            He specializes in the{" "}
+            <Box as="span" fontWeight="bold">
+              MERN stack
+            </Box>{" "}
+            and is currently exploring{" "}
+            <Box as="span" fontWeight="bold">
+              Next.js
+            </Box>
+            ,{" "}
+            <Box as="span" fontWeight="bold">
+              Electron
+            </Box>
+            , and{" "}
+            <Box as="span" fontWeight="bold">
+              Data Structures & Algorithms
+            </Box>
+            . Mahaveer was also a contributor to{" "}
+            <Box as="span" fontWeight="bold">
+              GSSOC&apos;24 (GirlScript Summer of Code)
+            </Box>
+            . When not coding, he enjoys spending time with his camera.
+            Currently, he is focused on his studies and personal projects while
+            pursuing a B.Tech at the National Institute of Technology,
+            Jalandhar.
           </Paragraph>
           <Box align="center" my={4}>
             <Button
@@ -96,6 +139,317 @@ const Page = () => {
         </Section>
 
         <Section delay={0.2}>
+          <Heading as="h3" variant="section-title">
+            Skills
+          </Heading>
+          <SimpleGrid columns={[3, 4, 5]} gap={6} justifyContent="center">
+            {/* JavaScript */}
+            <Box align="center">
+              <Box
+                w={16}
+                h={16}
+                borderRadius="xl"
+                bg={useColorModeValue("white", "whiteAlpha.200")}
+                p={3}
+                mb={2}
+                boxShadow="lg"
+              >
+                <Icon as={SiJavascript} w="full" h="full" color="#F7DF1E" />
+              </Box>
+              <Text fontSize="xs">JavaScript</Text>
+            </Box>
+
+            {/* TypeScript */}
+            <Box align="center">
+              <Box
+                w={16}
+                h={16}
+                borderRadius="xl"
+                bg={useColorModeValue("white", "whiteAlpha.200")}
+                p={3}
+                mb={2}
+                boxShadow="lg"
+              >
+                <Icon as={SiTypescript} w="full" h="full" color="#3178C6" />
+              </Box>
+              <Text fontSize="xs">TypeScript</Text>
+            </Box>
+
+            {/* C++ */}
+            <Box align="center">
+              <Box
+                w={16}
+                h={16}
+                borderRadius="xl"
+                bg={useColorModeValue("white", "whiteAlpha.200")}
+                p={3}
+                mb={2}
+                boxShadow="lg"
+              >
+                <Icon as={SiCplusplus} w="full" h="full" color="#00599C" />
+              </Box>
+              <Text fontSize="xs">C++</Text>
+            </Box>
+
+            {/* Java */}
+            <Box align="center">
+              <Box
+                w={16}
+                h={16}
+                borderRadius="xl"
+                bg={useColorModeValue("white", "whiteAlpha.200")}
+                p={3}
+                mb={2}
+                boxShadow="lg"
+              >
+                <Icon as={FaJava} w="full" h="full" color="#5382A1" />
+              </Box>
+              <Text fontSize="xs">Java</Text>
+            </Box>
+
+            {/* Python */}
+            <Box align="center">
+              <Box
+                w={16}
+                h={16}
+                borderRadius="xl"
+                bg={useColorModeValue("white", "whiteAlpha.200")}
+                p={3}
+                mb={2}
+                boxShadow="lg"
+              >
+                <Icon as={SiPython} w="full" h="full" color="#3776AB" />
+              </Box>
+              <Text fontSize="xs">Python</Text>
+            </Box>
+
+            {/* PHP */}
+            <Box align="center">
+              <Box
+                w={16}
+                h={16}
+                borderRadius="xl"
+                bg={useColorModeValue("white", "whiteAlpha.200")}
+                p={3}
+                mb={2}
+                boxShadow="lg"
+              >
+                <Icon as={SiPhp} w="full" h="full" color="#777BB4" />
+              </Box>
+              <Text fontSize="xs">PHP</Text>
+            </Box>
+
+            {/* HTML5 */}
+            <Box align="center">
+              <Box
+                w={16}
+                h={16}
+                borderRadius="xl"
+                bg={useColorModeValue("white", "whiteAlpha.200")}
+                p={3}
+                mb={2}
+                boxShadow="lg"
+              >
+                <Icon as={SiHtml5} w="full" h="full" color="#E34F26" />
+              </Box>
+              <Text fontSize="xs">HTML5</Text>
+            </Box>
+
+            {/* CSS3 */}
+            <Box align="center">
+              <Box
+                w={16}
+                h={16}
+                borderRadius="xl"
+                bg={useColorModeValue("white", "whiteAlpha.200")}
+                p={3}
+                mb={2}
+                boxShadow="lg"
+              >
+                <Icon as={SiCss3} w="full" h="full" color="#1572B6" />
+              </Box>
+              <Text fontSize="xs">CSS3</Text>
+            </Box>
+
+            {/* Tailwind */}
+            <Box align="center">
+              <Box
+                w={16}
+                h={16}
+                borderRadius="xl"
+                bg={useColorModeValue("white", "whiteAlpha.200")}
+                p={3}
+                mb={2}
+                boxShadow="lg"
+              >
+                <Icon as={SiTailwindcss} w="full" h="full" color="#38B2AC" />
+              </Box>
+              <Text fontSize="xs">Tailwind</Text>
+            </Box>
+
+            {/* React */}
+            <Box align="center">
+              <Box
+                w={16}
+                h={16}
+                borderRadius="xl"
+                bg={useColorModeValue("white", "whiteAlpha.200")}
+                p={3}
+                mb={2}
+                boxShadow="lg"
+              >
+                <Icon as={SiReact} w="full" h="full" color="#61DAFB" />
+              </Box>
+              <Text fontSize="xs">React</Text>
+            </Box>
+
+            {/* Next.js */}
+            <Box align="center">
+              <Box
+                w={16}
+                h={16}
+                borderRadius="xl"
+                bg={useColorModeValue("white", "whiteAlpha.200")}
+                p={3}
+                mb={2}
+                boxShadow="lg"
+              >
+                <Icon as={SiNextdotjs} w="full" h="full" />
+              </Box>
+              <Text fontSize="xs">Next.js</Text>
+            </Box>
+
+            {/* Node.js */}
+            <Box align="center">
+              <Box
+                w={16}
+                h={16}
+                borderRadius="xl"
+                bg={useColorModeValue("white", "whiteAlpha.200")}
+                p={3}
+                mb={2}
+                boxShadow="lg"
+              >
+                <Icon as={SiNodedotjs} w="full" h="full" color="#339933" />
+              </Box>
+              <Text fontSize="xs">Node.js</Text>
+            </Box>
+
+            {/* Express */}
+            <Box align="center">
+              <Box
+                w={16}
+                h={16}
+                borderRadius="xl"
+                bg={useColorModeValue("white", "whiteAlpha.200")}
+                p={3}
+                mb={2}
+                boxShadow="lg"
+              >
+                <Icon as={SiExpress} w="full" h="full" />
+              </Box>
+              <Text fontSize="xs">Express</Text>
+            </Box>
+
+            {/* Electron */}
+            <Box align="center">
+              <Box
+                w={16}
+                h={16}
+                borderRadius="xl"
+                bg={useColorModeValue("white", "whiteAlpha.200")}
+                p={3}
+                mb={2}
+                boxShadow="lg"
+              >
+                <Icon as={SiElectron} w="full" h="full" color="#47848F" />
+              </Box>
+              <Text fontSize="xs">Electron</Text>
+            </Box>
+
+            {/* MongoDB */}
+            <Box align="center">
+              <Box
+                w={16}
+                h={16}
+                borderRadius="xl"
+                bg={useColorModeValue("white", "whiteAlpha.200")}
+                p={3}
+                mb={2}
+                boxShadow="lg"
+              >
+                <Icon as={SiMongodb} w="full" h="full" color="#47A248" />
+              </Box>
+              <Text fontSize="xs">MongoDB</Text>
+            </Box>
+
+            {/* MySQL */}
+            <Box align="center">
+              <Box
+                w={16}
+                h={16}
+                borderRadius="xl"
+                bg={useColorModeValue("white", "whiteAlpha.200")}
+                p={3}
+                mb={2}
+                boxShadow="lg"
+              >
+                <Icon as={SiMysql} w="full" h="full" color="#4479A1" />
+              </Box>
+              <Text fontSize="xs">MySQL</Text>
+            </Box>
+
+            {/* Git */}
+            <Box align="center">
+              <Box
+                w={16}
+                h={16}
+                borderRadius="xl"
+                bg={useColorModeValue("white", "whiteAlpha.200")}
+                p={3}
+                mb={2}
+                boxShadow="lg"
+              >
+                <Icon as={SiGit} w="full" h="full" color="#F05032" />
+              </Box>
+              <Text fontSize="xs">Git</Text>
+            </Box>
+
+            {/* Linux */}
+            <Box align="center">
+              <Box
+                w={16}
+                h={16}
+                borderRadius="xl"
+                bg={useColorModeValue("white", "whiteAlpha.200")}
+                p={3}
+                mb={2}
+                boxShadow="lg"
+              >
+                <Icon as={SiLinux} w="full" h="full" />
+              </Box>
+              <Text fontSize="xs">Linux</Text>
+            </Box>
+
+            {/* Postman */}
+            <Box align="center">
+              <Box
+                w={16}
+                h={16}
+                borderRadius="xl"
+                bg={useColorModeValue("white", "whiteAlpha.200")}
+                p={3}
+                mb={2}
+                boxShadow="lg"
+              >
+                <Icon as={SiPostman} w="full" h="full" color="#FF6C37" />
+              </Box>
+              <Text fontSize="xs">Postman</Text>
+            </Box>
+          </SimpleGrid>
+        </Section>
+
+        <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
             Bio
           </Heading>
@@ -118,7 +472,7 @@ const Page = () => {
           </BioSection>
         </Section>
 
-        <Section delay={0.3}>
+        <Section delay={0.4}>
           <Heading as="h3" variant="section-title">
             I ♥
           </Heading>
@@ -137,7 +491,7 @@ const Page = () => {
                   colorScheme="teal"
                   leftIcon={<IoLogoGithub />}
                 >
-                  @mahaveer
+                  @mahaveergurjar
                 </Button>
               </Link>
             </ListItem>
@@ -151,7 +505,7 @@ const Page = () => {
                   colorScheme="teal"
                   leftIcon={<IoLogoLinkedin />}
                 >
-                  @mahaveer
+                  LinkedIn
                 </Button>
               </Link>
             </ListItem>
@@ -162,7 +516,7 @@ const Page = () => {
                   colorScheme="teal"
                   leftIcon={<IoLogoTwitter />}
                 >
-                  @mahaveer
+                  Twitter / X
                 </Button>
               </Link>
             </ListItem>
@@ -176,7 +530,7 @@ const Page = () => {
                   colorScheme="teal"
                   leftIcon={<IoLogoInstagram />}
                 >
-                  @mahaveer
+                  Instagram
                 </Button>
               </Link>
             </ListItem>
